@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+}
+
+.container{
+  width: max-content;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid;
+}
+
+.card-front-container{
+  width: 400px;
+  margin: auto;
+  margin-top: 50px;
+  padding-bottom: 20px;
+  background-color: rgb(195, 231, 249);
+  border: 1px solid;
+}
+
+.card-header-container{
+  width: 100%;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  border-bottom: 2px solid;
+  justify-content: space-around;
+  background-color: lightskyblue;
+}
+
+.emblem-logo-container>img{
+  width: 30px;
+}
+
+.card-front-title-container{
+  height: max-content;
+  margin-top: -10px;
+}
+
+.card-front-title-container>h4{
+  margin-bottom: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-front-title-container>p{
+  font-size: 12px;
+}
+
+.state-name-container{
+  margin-top: -15px;
+}
+
+.state-name-container>b{
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 3px;
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(253, 135, 92);
+}
+
+.licence-number{
+  width: max-content;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  margin-bottom: 3px;
+}
+
+.photo-and-sign-container>img{
+  width: 50px;
+  height: 50px;
+}
+
+.user-personal-info-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.issue-and-validity-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  line-height: 1.5;
+  font-size: x-small;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.user-additional-info-container{
+  margin-top: 25px;
+}
+
+.user-additional-info-container>div{
+  display: flex;
+  line-height: 1.5;
+  gap: 10px;
+  padding-left: 15px;
+  align-items: center;
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.card-back-container{
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.licence-number-back{
+  height: 30px;
+  font-size: small;
+  align-content: end;
+  padding-left: 20px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightskyblue;
+}
+
+.qr-container{
+  display: flex;
+  gap: 20px;
+}
+
+.qr-img-container>img{
+  width: 60px;
+  height: 60px;
+  margin-top: 5px;
+  padding-left: 20px;
+}
+
+.regn-and-validity-container>div{
+  display: flex;
+  gap: 110px;
+  font-size: x-small;
+  
+}
+
+.regn-number{
+  font-size: smaller;
+  margin-bottom: 20px;
+} 
