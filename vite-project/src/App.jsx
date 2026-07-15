@@ -42,14 +42,14 @@ function App() {
               </div>
             </div>
             <div className='photo-and-sign-container'>
-              <img src="/images/seek-logo.png" alt="" />
-              <img src="" alt="" />
+              <img className='photo' src="/images/seek-logo.png" alt="" /><br />
+              <img className='sign' src="" alt="" />
             </div>
           </div>
           <div className='user-additional-info-container'>
-            <div>
+            <div className='name-and-sign-container'>
               <div><p>Name :</p></div>
-              <div><h4>abc</h4></div>
+              <div><h4>awadhesh kumar</h4></div>
               <div><p>Holder's Signature</p></div>
             </div>
             <div>
@@ -81,6 +81,93 @@ function App() {
               </div>
             </div>
           </div>
+            <div className='vehicle-class'>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Class of Vehicle</th>
+                    <th>Code</th>
+                    <th>Issued by</th>
+                    <th>Date of Issue</th>
+                    <th>Vehicle Category</th>
+                    <th>Badge Number</th>
+                    <th>Badge Issued date</th>
+                    <th>Badge Issued by</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Bike</td>
+                    <td>MCWG</td>
+                    <td>BR33</td>
+                    <td>01-01-2026</td>
+                    <td>NT</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Car</td>
+                    <td>LMV</td>
+                    <td>BR33</td>
+                    <td>01-01-2026</td>
+                    <td>NT</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className='contact-container'>
+              <p>
+                Mobile Number: 7004894284
+              </p>
+              <div>
+                <p>Licence Authority</p>
+                <p>DTO, PATNA</p>
+              </div>
+            </div>
         </div>
       </main>
     </>
