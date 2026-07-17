@@ -26,15 +26,15 @@ function App() {
           </div>
           <div className='user-personal-info-container'>
             <div>
-              <h4 className='licence-number'>BR33 20260024700</h4>
+              <h4 className='licence-number'>BR06 20260041648</h4>
               <div className='issue-and-validity-container'>
                 <div>
                   <p>Issue Date</p>
-                  <b>03-07-2026</b>
+                  <b>08-Jul-2026</b>
                 </div>
                 <div>
                   <p>Validity ( NT )</p>
-                  <b>02-07-2036</b>
+                  <b>14-Feb-2043</b>
                 </div>
                 <div>
                   <p>Validity ( TR )</p>
@@ -42,38 +42,40 @@ function App() {
               </div>
             </div>
             <div className='photo-and-sign-container'>
-              <img className='photo' src="/images/seek-logo.png" alt="" /><br />
-              <img className='sign' src="" alt="" />
+              <img className='photo' src="/images/chandan-photo.jpeg" alt="" /><br />
+              <img className='sign' src="/images/chandan-sign.png" alt="" />
             </div>
           </div>
           <div className='user-additional-info-container'>
             <div className='name-and-sign-container'>
               <div><p>Name :</p></div>
-              <div><h4>awadhesh kumar</h4></div>
-              <div><p>Holder's Signature</p></div>
+              <div className='name-and-sign-seprator-container'>
+                <div><h4>CHANDAN KUMAR</h4></div>
+                <div><p>Holder's Signature</p></div>
+              </div>
             </div>
             <div>
               <div><p>Date Of Birth :</p></div>
-              <div><h4>123</h4></div>
-              <div><p>Blood Group: <b>B+</b></p></div>
+              <div><h4>15-02-2003</h4></div>
+              <div><p>Blood Group: <b>O+</b></p></div>
               <div><p>Organ Donor:</p></div>
             </div>
             <div>
               <div><p>Son/Daughter/wife of :</p></div>
-              <div><h4>abcbkjgkg djd</h4></div>
+              <div><h4>GOPAL PRASAD SHARMA</h4></div>
             </div>
             <div>
               <div><p>Address :</p></div>
               <div>
-                <p>abcdvvxvvvvsdfdfdsds gs dfndknks</p></div>
+                <p>DADAR MANDI GULZARBAGH PATNA BIHAR, 800007</p></div>
             </div>
           </div>
         </div>
         <div className='card-back-container'>
-          <h4 className='licence-number-back'>DL No. BR33 20260024700</h4>
+          <h4 className='licence-number-back'>DL No. BR06 20260041648</h4>
           <div className='qr-container'>
-            <div className='qr-img-container'><img src="/images/qr.png" alt="" /></div>
-            <div className='regn-and-validity-container'> 
+            <div className='qr-img-container'><img src="/images/chandan-kumar-qr.png" alt="" /></div>
+            <div className='regn-and-validity-container'>
               <p className='regn-number'>ADPVEH No.(Regn.Numbers)</p>
               <div>
                 <p>Hazardous validity</p>
@@ -81,93 +83,93 @@ function App() {
               </div>
             </div>
           </div>
-            <div className='vehicle-class'>
-              <table>
-                <thead>
-                  <tr>
-                    <th>Class of Vehicle</th>
-                    <th>Code</th>
-                    <th>Issued by</th>
-                    <th>Date of Issue</th>
-                    <th>Vehicle Category</th>
-                    <th>Badge Number</th>
-                    <th>Badge Issued date</th>
-                    <th>Badge Issued by</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Bike</td>
-                    <td>MCWG</td>
-                    <td>BR33</td>
-                    <td>01-01-2026</td>
-                    <td>NT</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>Car</td>
-                    <td>LMV</td>
-                    <td>BR33</td>
-                    <td>01-01-2026</td>
-                    <td>NT</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
+          <div className='vehicle-class'>
+            <table>
+              <thead>
+                <tr>
+                  <th>Class of Vehicle</th>
+                  <th>Code</th>
+                  <th>Issued by</th>
+                  <th>Date of Issue</th>
+                  <th>Vehicle Category</th>
+                  <th>Badge Number</th>
+                  <th>Badge Issued date</th>
+                  <th>Badge Issued by</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Bike</td>
+                  <td>MCWG</td>
+                  <td>BR33</td>
+                  <td>08-Jul-2026</td>
+                  <td>NT</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Car</td>
+                  <td>LMV</td>
+                  <td>BR33</td>
+                  <td>08-Jul-2026</td>
+                  <td>NT</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div className='contact-container'>
+            <p>
+              Mobile Number: 9097422702
+            </p>
+            <div>
+              <p>Licence Authority</p>
+              <p>DTO, MUZAFFARPUR</p>
             </div>
-            <div className='contact-container'>
-              <p>
-                Mobile Number: 7004894284
-              </p>
-              <div>
-                <p>Licence Authority</p>
-                <p>DTO, PATNA</p>
-              </div>
-            </div>
+          </div>
         </div>
       </main>
     </>
