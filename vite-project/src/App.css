@@ -1,23 +1,23 @@
-*{
+* {
   margin: 0;
 }
 
-.container{
+.container {
   width: min-content;
   margin: auto;
   padding: 20px;
   border: 1px solid;
 }
 
-.card-front-container{
+.card-front-container {
   width: 400px;
   margin-top: 50px;
   padding-bottom: 20px;
   border-radius: 10px;
-  background-color: rgb(159, 213, 254);
+  background-color: rgb(188, 221, 246);
 }
 
-.card-header-container{
+.card-header-container {
   width: 100%;
   height: 70px;
   display: flex;
@@ -33,7 +33,7 @@
 
 }
 
-.emblem-logo-container{
+.emblem-logo-container {
   width: 64px;
   height: 70px;
   margin-left: -14px;
@@ -42,31 +42,31 @@
   border-bottom: 1.5px solid;
 }
 
-.emblem-logo-container>img{
+.emblem-logo-container>img {
   width: 30px;
 }
 
-.card-front-title-container{
+.card-front-title-container {
   height: max-content;
   margin-top: -10px;
 }
 
-.card-front-title-container>h4{
+.card-front-title-container>h4 {
   margin-bottom: 5px;
   font-size: 15px;
   font-weight: 500;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.card-front-title-container>p{
+.card-front-title-container>p {
   font-size: 12px;
 }
 
-.state-name-container{
+.state-name-container {
   margin-top: -15px;
 }
 
-.state-name-container>b{
+.state-name-container>b {
   border: 1px solid;
   border-radius: 50%;
   padding: 3px;
@@ -75,36 +75,36 @@
   background-color: rgb(253, 135, 92);
 }
 
-.licence-number{
+.licence-number {
   width: max-content;
   font-family: Arial, Helvetica, sans-serif;
   font-size: small;
   margin: -5px 0 3px 27px;
 }
 
-.photo-and-sign-container{
+.photo-and-sign-container {
   text-align: right;
   margin-top: -12px;
 }
 
-.photo{
+.photo {
   width: 50px;
   height: 50px;
 }
 
-.sign{
+.sign {
   width: 80px;
   height: 25px;
 }
 
-.user-personal-info-container{
+.user-personal-info-container {
   display: flex;
   justify-content: space-between;
   padding: 0 20px 0 50px;
 
 }
 
-.issue-and-validity-container{
+.issue-and-validity-container {
   display: flex;
   width: auto;
   gap: 23px;
@@ -115,7 +115,7 @@
 
 }
 
-.first-issue-container{
+.first-issue-container {
   width: 350px;
   top: 10%;
   margin-left: 167px;
@@ -127,7 +127,7 @@
 }
 
 
-.user-additional-info-container>div{
+.user-additional-info-container>div {
   display: flex;
   line-height: 1.5;
   gap: 10px;
@@ -138,25 +138,25 @@
 
 }
 
-.name-and-sign-seprator-container{
+.name-and-sign-seprator-container {
   width: 84%;
   display: flex;
   justify-content: space-between;
 }
 
-.name-and-sign-seprator-container>div>p{
+.name-and-sign-seprator-container>div>p {
   font-size: x-small;
 }
 
-.card-back-container{
+.card-back-container {
   width: 400px;
   margin-top: 20px;
   border-radius: 10px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(159, 213, 254);
+  background-color: rgb(188, 221, 246);
 }
 
-.licence-number-back{
+.licence-number-back {
   height: 30px;
   font-size: small;
   align-content: end;
@@ -167,47 +167,48 @@
   background-color: rgb(113, 200, 255);
 }
 
-.qr-container{
+.qr-container {
   display: flex;
   gap: 20px;
 }
 
-.qr-img-container>img{
+.qr-img-container>img {
   width: 60px;
   height: 60px;
   margin-top: 5px;
   padding-left: 19px;
 }
 
-.regn-and-validity-container>div{
+.regn-and-validity-container>div {
   display: flex;
   gap: 110px;
   font-size: x-small;
-  
+
 }
 
-.regn-number{
+.regn-number {
   font-size: x-small;
   margin: 3px 0 20px 0;
-} 
+}
 
-.vehicle-class{
+.vehicle-class {
   margin-top: 10px;
   padding: 0 20px 0 20px;
 }
 
-.vehicle-class>table{
+.vehicle-class>table {
   text-align: center;
   border-collapse: collapse;
- 
+
 }
 
-.vehicle-class>table>thead>tr>th{
+.vehicle-class>table>thead>tr>th {
   background-color: rgb(113, 200, 255);
   font-weight: bolder;
 }
 
-.vehicle-class>table>tbody>tr>td, .vehicle-class>table>thead>tr>th{
+.vehicle-class>table>tbody>tr>td,
+.vehicle-class>table>thead>tr>th {
   width: 50px;
   height: 10px;
   font-size: 7px;
@@ -215,7 +216,17 @@
   border: 1px solid;
 }
 
-.form-and-rule-container{
+.bike-icon {
+  width: 17px;
+  height: 10px;
+}
+
+.car-icon {
+  width: 20px;
+  height: 10px;
+}
+
+.form-and-rule-container {
   width: 400px;
   position: absolute;
   text-align: right;
@@ -226,7 +237,7 @@
   transform: rotate(-90deg);
 }
 
-.contact-container{
+.contact-container {
   display: flex;
   padding: 0 20px 20px 20px;
   margin-top: 5px;
@@ -235,7 +246,62 @@
 
 }
 
-.contact-container>p, .contact-container>div>p{
+.contact-container>p,
+.contact-container>div>p {
   font-size: x-small;
   text-align: center;
+}
+
+
+
+/* ------------------------------------------------Diving Licence Form------------------------------------------------ */
+
+
+
+.licence-container {
+  width: 90%;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid;
+}
+
+.form-container {
+  margin: auto;
+  margin-top: 50px;
+  border: 1px solid red;
+}
+
+.front-container {
+  width: 50%;
+}
+
+.front-container>div {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.front-container>div>input,
+.front-container>div>h4 {
+  width: 300px;
+  height: 30px;
+  padding: 0 0 0 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.front-container>div>input{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.front-container>div>textarea {
+  width: 300px;
+  height: 50px;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }

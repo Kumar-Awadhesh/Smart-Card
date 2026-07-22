@@ -97,7 +97,7 @@ const DrivingLicence = () => {
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Bike</td>
+                                    <td><img className="bike-icon" src="/images/bike.png" alt="" /></td>
                                     <td>MCWG</td>
                                     <td>BR33</td>
                                     <td>08-Jul-2026</td>
@@ -107,7 +107,7 @@ const DrivingLicence = () => {
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td>Car</td>
+                                    <td><img className="car-icon" src="/images/car.png" alt="" /></td>
                                     <td>LMV</td>
                                     <td>BR33</td>
                                     <td>08-Jul-2026</td>
