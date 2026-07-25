@@ -266,42 +266,118 @@
 }
 
 .form-container {
+  display: flex;
+  flex-wrap: wrap;
   margin: auto;
+  justify-content: space-around;
   margin-top: 50px;
   border: 1px solid red;
 }
 
 .front-container {
-  width: 50%;
+  width: 47%;
+  margin-bottom: 50px;
 }
 
 .front-container>div {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin: auto;
   margin-bottom: 20px;
-  justify-content: space-between;
 }
 
-.front-container>div>input,
-.front-container>div>h4 {
+.front-container>div>input {
   width: 300px;
-  height: 30px;
+  height: 40px;
+  align-content: center;
   padding: 0 0 0 10px;
   border-radius: 5px;
   border: none;
   outline: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.front-container>div>input{
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.front-container>div>h4{
+  align-content: center;
 }
 
 .front-container>div>textarea {
   width: 300px;
-  height: 50px;
+  height: 70px;
   padding-left: 10px;
   border: none;
   outline: none;
+  align-content: center;
+  border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.back-container {
+  width: 47%;
+  margin-bottom: 50px;
+}
+
+.back-container>div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.back-container>div>input {
+  width: 300px;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.back-container>div>h4{
+  align-content: center;
+}
+
+.submit-btn-container>button {
+  border: none;
+  outline: none;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: medium;
+  padding: 10px 20px 10px 20px;
+  background-color: lightseagreen;
+}
+
+.submit-btn-container>button:hover {
+  cursor: pointer;
+  background-color: lightgreen;
+}
+
+
+
+/* ----------------------------------------------------Media Query--------------------------------------------------- */
+
+
+
+@media(max-width: 720px) and (min-width: 240px) {
+  .form-container {
+    display: block;
+    margin: auto;
+  }
+
+  .front-container,
+  .back-container {
+    width: 100%;
+  }
+
+  .front-container>div>input,
+  .front-container>div>textarea,
+  .back-container>div>input {
+    width: 200px;
+  }
+
+
 }
