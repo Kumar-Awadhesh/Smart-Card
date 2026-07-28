@@ -1,5 +1,11 @@
+import { useState, useContext } from "react";
+import { SmartCardContext } from "../context/smartCardContext";
+
+
 const DrivingLicence = () => {
 
+    const {licenceData, setLicenceData} = useContext(SmartCardContext)
+    console.log(licenceData)
 
 
     return (
@@ -21,15 +27,15 @@ const DrivingLicence = () => {
                     </div>
                     <div className='user-personal-info-container'>
                         <div>
-                            <h4 className='licence-number'>BR06 20260041648</h4>
+                            <h4 className='licence-number'>{licenceData.licence_number}</h4>
                             <div className='issue-and-validity-container'>
                                 <div>
                                     <p>Issue Date</p>
-                                    <b>08-Jul-2026</b>
+                                    <b>{licenceData.licence_issue_date}</b>
                                 </div>
                                 <div>
                                     <p>Validity ( NT )</p>
-                                    <b>14-Feb-2043</b>
+                                    <b>{licenceData.licence_validity}</b>
                                 </div>
                                 <div>
                                     <p>Validity ( TR )</p>
@@ -37,40 +43,48 @@ const DrivingLicence = () => {
                             </div>
                         </div>
                         <div className='photo-and-sign-container'>
-                            <img className='photo' src="/images/chandan-photo.jpeg" alt="" /><br />
-                            <img className='sign' src="/images/chandan-sign.png" alt="" />
+                            {
+                                licenceData.holder_photo &&(
+                                    <img className='photo' src={URL.createObjectURL(licenceData.holder_photo)} alt="" />
+                                )
+                            } <br />
+                            {
+                                licenceData.holder_signature && (
+                                    <img className='sign' src={URL.createObjectURL(licenceData.holder_signature)} alt="" />
+                                )
+                            }
                         </div>
                         <div className="first-issue-container">
-                            <p>Date of First Issue 08-07-2026</p>
+                            <p>Date of First Issue {licenceData.licence_issue_date}</p>
                         </div>
                     </div>
                     <div className='user-additional-info-container'>
                         <div className='name-and-sign-container'>
                             <div><p>Name :</p></div>
                             <div className='name-and-sign-seprator-container'>
-                                <div><h4>CHANDAN KUMAR</h4></div>
+                                <div><h4>{licenceData.name}</h4></div>
                                 <div><p>Holder's Signature</p></div>
                             </div>
                         </div>
                         <div>
                             <div><p>Date Of Birth :</p></div>
-                            <div><h4>15-02-2003</h4></div>
+                            <div><h4>{licenceData.date_of_birth}</h4></div>
                             <div><p>Blood Group: <b>O+</b></p></div>
                             <div><p>Organ Donor:</p></div>
                         </div>
                         <div>
                             <div><p>Son/Daughter/wife of :</p></div>
-                            <div><h4>GOPAL PRASAD SHARMA</h4></div>
+                            <div><h4>{licenceData.name_of_father}</h4></div>
                         </div>
                         <div>
                             <div><p>Address :</p></div>
                             <div>
-                                <p>DADAR MANDI GULZARBAGH PATNA BIHAR, 800007</p></div>
+                                <p>{licenceData.address}</p></div>
                         </div>
                     </div>
                 </div>
                 <div className='card-back-container'>
-                    <h4 className='licence-number-back'>DL No. BR06 20260041648</h4>
+                    <h4 className='licence-number-back'>DL No. {licenceData.licence_number}</h4>
                     <div className='qr-container'>
                         <div className='qr-img-container'><img src="/images/chandan-kumar-qr.png" alt="" /></div>
                         <div className='regn-and-validity-container'>
@@ -98,9 +112,9 @@ const DrivingLicence = () => {
                             <tbody>
                                 <tr>
                                     <td><img className="bike-icon" src="/images/bike.png" alt="" /></td>
-                                    <td>MCWG</td>
-                                    <td>BR33</td>
-                                    <td>08-Jul-2026</td>
+                                    <td>{licenceData.vehicle_code.split(" ")[0]}</td>
+                                    <td>{licenceData.licence_number.split(" ")[0]}</td>
+                                    <td>{licenceData.licence_issue_date}</td>
                                     <td>NT</td>
                                     <td></td>
                                     <td></td>
@@ -108,9 +122,9 @@ const DrivingLicence = () => {
                                 </tr>
                                 <tr>
                                     <td><img className="car-icon" src="/images/car.png" alt="" /></td>
-                                    <td>LMV</td>
-                                    <td>BR33</td>
-                                    <td>08-Jul-2026</td>
+                                    <td>{licenceData.vehicle_code.split(" ")[1]}</td>
+                                    <td>{licenceData.licence_number.split(" ")[0]}</td>
+                                    <td>{licenceData.licence_issue_date}</td>
                                     <td>NT</td>
                                     <td></td>
                                     <td></td>
@@ -164,11 +178,11 @@ const DrivingLicence = () => {
                     </div>
                     <div className='contact-container'>
                         <p>
-                            Mobile Number: 9097422702
+                            Mobile Number: {licenceData.mobile_number}
                         </p>
                         <div>
                             <p>Licence Authority</p>
-                            <p>DTO, MUZAFFARPUR</p>
+                            <p>DTO, {licenceData.licence_authority.toUpperCase()}</p>
                         </div>
                     </div>
                 </div>

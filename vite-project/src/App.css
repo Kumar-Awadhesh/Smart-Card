@@ -351,6 +351,11 @@
   background-color: lightseagreen;
 }
 
+.submit-btn-container{
+  margin: auto;
+  text-align: center;
+}
+
 .submit-btn-container>button:hover {
   cursor: pointer;
   background-color: lightgreen;

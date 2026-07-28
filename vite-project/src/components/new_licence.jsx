@@ -1,4 +1,7 @@
-import { useState } from "react"
+import { useState, useContext } from "react"
+import { SmartCardContext } from "../context/smartCardContext"
+import { useNavigate } from "react-router-dom"
+
 
 const NewDrivingLicence = () => {
     const [userData, setUserData] = useState({
@@ -8,15 +11,18 @@ const NewDrivingLicence = () => {
         address: "",
     })
 
+    const navigate = useNavigate()
+    const {licenceData, setLicenceData} = useContext(SmartCardContext);
+
 
     const userRegistration = (data, value) => {
         setUserData(prev => ({...prev, [data]: value}))
-        console.log(value)
     }
 
 
     const SubmitUserdata = () => {
-        
+        setLicenceData(userData);
+        navigate("/driving-licence")
     }
 
 
@@ -39,11 +45,11 @@ const NewDrivingLicence = () => {
                         </div>
                         <div>
                             <h4>Holder's Photo :</h4>
-                            <input type="file" placeholder="Upload photo" />
+                            <input type="file" placeholder="Upload photo" accept="image/*" onChange={(e)=> userRegistration("holder_photo", e.target.files[0])} />
                         </div>
                         <div>
                             <h4>Holder's Signature :</h4>
-                            <input type="file" placeholder="Upload signature" />
+                            <input type="file" placeholder="Upload signature" accept="/image/*" onChange={(e)=> userRegistration("holder_signature", e.target.files[0])}/>
                         </div>
                         <div>
                             <h4>Holder's Name :</h4>
