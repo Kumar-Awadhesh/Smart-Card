@@ -11,7 +11,6 @@ const DrivingLicence = () => {
     return (
         <>
             <main className='container'>
-                <h1>Make it Smart</h1>
                 <div className='card-front-container'>
                     <div className='card-header-container'>
                         <div className='emblem-logo-container'>
@@ -62,7 +61,7 @@ const DrivingLicence = () => {
                         <div className='name-and-sign-container'>
                             <div><p>Name :</p></div>
                             <div className='name-and-sign-seprator-container'>
-                                <div><h4>{licenceData.name}</h4></div>
+                                <div><h4>{licenceData.name.toUpperCase()}</h4></div>
                                 <div><p>Holder's Signature</p></div>
                             </div>
                         </div>
@@ -74,12 +73,12 @@ const DrivingLicence = () => {
                         </div>
                         <div>
                             <div><p>Son/Daughter/wife of :</p></div>
-                            <div><h4>{licenceData.name_of_father}</h4></div>
+                            <div><h4>{licenceData.name_of_father.toUpperCase()}</h4></div>
                         </div>
                         <div>
-                            <div><p>Address :</p></div>
+                            <div className="address-container"><p>Address :</p></div>
                             <div>
-                                <p>{licenceData.address}</p></div>
+                                <p>{licenceData.address.toUpperCase()}</p></div>
                         </div>
                     </div>
                 </div>
@@ -112,8 +111,8 @@ const DrivingLicence = () => {
                             <tbody>
                                 <tr>
                                     <td><img className="bike-icon" src="/images/bike.png" alt="" /></td>
-                                    <td>{licenceData.vehicle_code.split(" ")[0]}</td>
-                                    <td>{licenceData.licence_number.split(" ")[0]}</td>
+                                    <td>{licenceData.vehicle_code.split(" ")[0].toUpperCase()}</td>
+                                    <td>{licenceData.licence_number.split(" ")[0].toUpperCase()}</td>
                                     <td>{licenceData.licence_issue_date}</td>
                                     <td>NT</td>
                                     <td></td>
@@ -122,8 +121,8 @@ const DrivingLicence = () => {
                                 </tr>
                                 <tr>
                                     <td><img className="car-icon" src="/images/car.png" alt="" /></td>
-                                    <td>{licenceData.vehicle_code.split(" ")[1]}</td>
-                                    <td>{licenceData.licence_number.split(" ")[0]}</td>
+                                    <td>{licenceData.vehicle_code.split(" ")[1].toUpperCase()}</td>
+                                    <td>{licenceData.licence_number.split(" ")[0].toUpperCase()}</td>
                                     <td>{licenceData.licence_issue_date}</td>
                                     <td>NT</td>
                                     <td></td>
