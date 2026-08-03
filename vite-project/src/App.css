@@ -16,7 +16,7 @@
   font-size: 60px;
   color: darkcyan;
   padding: 20px 0 20px 0;
-  background: url("images/header-background.avif");
+  background: url("/images/header-background.avif");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,7 +39,7 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   justify-content: space-around;
-  background: url("images/dlHeader-design.png");
+  background: url("/images/dlHeader-design.png");
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -130,7 +130,7 @@
 
 .first-issue-container {
   width: 350px;
-  top: 10%;
+  top: 33%;
   margin-left: 167px;
   transform: rotate(-90deg);
   position: absolute;
@@ -388,7 +388,7 @@
 
 .dashboard-container{
   min-height: 650px;
-  background: url("images/dashboard-background.jpg");
+  background: url("/images/dashboard-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
