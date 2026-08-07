@@ -75,10 +75,9 @@ const DrivingLicence = () => {
                             <div><p>Son/Daughter/wife of :</p></div>
                             <div><h4>{licenceData.name_of_father.toUpperCase()}</h4></div>
                         </div>
-                        <div>
-                            <div className="address-container"><p>Address :</p></div>
-                            <div>
-                                <p>{licenceData.address.toUpperCase()}</p></div>
+                        <div className="address-container">
+                            <div className="address"><p>Address :</p></div>
+                            <div><p>{licenceData.address.toUpperCase()}</p></div>
                         </div>
                     </div>
                 </div>

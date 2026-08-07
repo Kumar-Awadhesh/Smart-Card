@@ -131,13 +131,14 @@
 }
 
 .first-issue-container {
-  width: 350px;
-  top: 33%;
-  margin-left: 167px;
-  transform: rotate(-90deg);
   position: absolute;
-  margin-top: 60px;
+  width: max-content;
+  height: max-content;
   font-size: xx-small;
+  text-align: center;
+  margin-top: 55px;
+  margin-left: 283px;
+  transform: rotate(-90deg);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -147,16 +148,16 @@
   line-height: 1.7;
   gap: 10px;
   padding-left: 15px;
-  align-items: center;
+  align-items: top;
   font-size: x-small;
   font-family: Arial, Helvetica, sans-serif;
 
 }
 
-.address-container>p {
-  width: max-content;
-  padding-bottom: 15px;
-  word-wrap: nowrap;
+
+.address-container>div:first-child {
+  text-wrap: nowrap;
+ 
 }
 
 .name-and-sign-seprator-container {
