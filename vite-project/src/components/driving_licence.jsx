@@ -1,10 +1,11 @@
 import { useState, useContext } from "react";
 import { SmartCardContext } from "../context/smartCardContext";
+import { data } from "react-router-dom";
 
 
 const DrivingLicence = () => {
 
-    const {licenceData, setLicenceData} = useContext(SmartCardContext)
+    const { licenceData, setLicenceData } = useContext(SmartCardContext)
     console.log(licenceData)
 
 
@@ -30,11 +31,20 @@ const DrivingLicence = () => {
                             <div className='issue-and-validity-container'>
                                 <div>
                                     <p>Issue Date</p>
-                                    <b>{licenceData.licence_issue_date}</b>
+                                    <b>{(() => {
+                                        const date = new Date(licenceData.licence_issue_date);
+                                        const newDate = date.toLocaleDateString("en-GB").replaceAll("/", "-");
+                                        return newDate;
+                                    })()}
+                                    </b>
                                 </div>
                                 <div>
                                     <p>Validity ( NT )</p>
-                                    <b>{licenceData.licence_validity}</b>
+                                    <b>{(() => {
+                                        const date = new Date(licenceData.licence_validity);
+                                        const newDate = date.toLocaleDateString("en-GB").replaceAll("/", "-");
+                                        return newDate
+                                    })()}</b>
                                 </div>
                                 <div>
                                     <p>Validity ( TR )</p>
@@ -43,7 +53,7 @@ const DrivingLicence = () => {
                         </div>
                         <div className='photo-and-sign-container'>
                             {
-                                licenceData.holder_photo &&(
+                                licenceData.holder_photo && (
                                     <img className='photo' src={URL.createObjectURL(licenceData.holder_photo)} alt="" />
                                 )
                             } <br />
@@ -54,7 +64,12 @@ const DrivingLicence = () => {
                             }
                         </div>
                         <div className="first-issue-container">
-                            <p>Date of First Issue {licenceData.licence_issue_date}</p>
+                            <p>Date of First Issue, {(() => {
+                                const date = new Date(licenceData.licence_issue_date);
+                                const newDate = date.toLocaleDateString("en-GB").replaceAll("/", "-");
+                                return newDate
+                            })()}
+                            </p>
                         </div>
                     </div>
                     <div className='user-additional-info-container'>
@@ -67,7 +82,14 @@ const DrivingLicence = () => {
                         </div>
                         <div>
                             <div><p>Date Of Birth :</p></div>
-                            <div><h4>{licenceData.date_of_birth}</h4></div>
+                            <div><h4>
+                                {(() => {
+                                    const date = new Date(licenceData.date_of_birth);
+                                    const newDate = date.toLocaleDateString("en-GB").replaceAll("/", "-");
+                                    return newDate
+                                })()}
+
+                            </h4></div>
                             <div><p>Blood Group: <b>O+</b></p></div>
                             <div><p>Organ Donor:</p></div>
                         </div>
@@ -112,7 +134,14 @@ const DrivingLicence = () => {
                                     <td><img className="bike-icon" src="/images/bike.png" alt="" /></td>
                                     <td>{licenceData.vehicle_code.split(" ")[0].toUpperCase()}</td>
                                     <td>{licenceData.licence_number.split(" ")[0].toUpperCase()}</td>
-                                    <td>{licenceData.licence_issue_date}</td>
+                                    <td>
+                                        {(() => {
+                                            const date = new Date(licenceData.licence_issue_date);
+                                            const newDate = date.toLocaleDateString("en-GB").replaceAll("/", "-");
+                                            return newDate
+                                        })()}
+
+                                    </td>
                                     <td>NT</td>
                                     <td></td>
                                     <td></td>
@@ -122,7 +151,14 @@ const DrivingLicence = () => {
                                     <td><img className="car-icon" src="/images/car.png" alt="" /></td>
                                     <td>{licenceData.vehicle_code.split(" ")[1].toUpperCase()}</td>
                                     <td>{licenceData.licence_number.split(" ")[0].toUpperCase()}</td>
-                                    <td>{licenceData.licence_issue_date}</td>
+                                    <td>
+                                        {(() => {
+                                            const date = new Date(licenceData.licence_issue_date);
+                                            const newDate = date.toLocaleDateString("en-GB").replaceAll("/", "-");
+                                            return newDate
+                                        })()}
+                                    
+                                    </td>
                                     <td>NT</td>
                                     <td></td>
                                     <td></td>
