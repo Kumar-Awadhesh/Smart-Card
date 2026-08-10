@@ -27,7 +27,7 @@ const DrivingLicence = () => {
                     </div>
                     <div className='user-personal-info-container'>
                         <div>
-                            <h4 className='licence-number'>{licenceData.licence_number}</h4>
+                            <h4 className='licence-number'>{licenceData.licence_number.toUpperCase()}</h4>
                             <div className='issue-and-validity-container'>
                                 <div>
                                     <p>Issue Date</p>
@@ -64,7 +64,7 @@ const DrivingLicence = () => {
                             }
                         </div>
                         <div className="first-issue-container">
-                            <p>Date of First Issue, {(() => {
+                            <p>Date of First Issue {(() => {
                                 const date = new Date(licenceData.licence_issue_date);
                                 const newDate = date.toLocaleDateString("en-GB").replaceAll("/", "-");
                                 return newDate
@@ -106,7 +106,7 @@ const DrivingLicence = () => {
                 <div className='card-back-container'>
                     <h4 className='licence-number-back'>DL No. {licenceData.licence_number}</h4>
                     <div className='qr-container'>
-                        <div className='qr-img-container'><img src="/images/chandan-kumar-qr.png" alt="" /></div>
+                        <div className='qr-img-container'><img src="/images/licence-qr.png" alt="" /></div>
                         <div className='regn-and-validity-container'>
                             <p className='regn-number'>ADPVEH No.(Regn.Numbers)</p>
                             <div>
@@ -221,6 +221,7 @@ const DrivingLicence = () => {
                     </div>
                 </div>
             </main>
+            <div className="print-btn-container"><button className="print-btn" onClick={()=> window.print()}>Print</button></div>
         </>
     )
 }
