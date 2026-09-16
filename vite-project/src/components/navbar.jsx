@@ -31,9 +31,9 @@ const Navbar = () => {
                 </h2>
                 {
                     navbar &&
-                    <div className="mobile-navbar-container">
+                    <div className="mobile-navbar-container smooth-navigation">
 
-                        <div className="mobile-navbar">
+                        <div className="mobile-navbar smooth-navigation">
                             <div><h4 onClick={() => {
                                 setNavbar(false);
                                 navigate("/");

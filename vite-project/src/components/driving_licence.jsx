@@ -210,7 +210,7 @@ const DrivingLicence = () => {
                             <p>FORM 7 Rule 16 (2)</p>
                         </div>
                     </div>
-                    <div className='contact-container'>
+                    <div className='contact-container smooth-navigation'>
                         <p>
                             Mobile Number: {licenceData.mobile_number}
                         </p>

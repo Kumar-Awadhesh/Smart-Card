@@ -28,7 +28,7 @@ const NewDrivingLicence = () => {
 
     return(
         <>
-            <main className="licence-container">
+            <main className="licence-container smooth-navigation">
                 <div className="form-container">
                     <div className="front-container">
                         <div>

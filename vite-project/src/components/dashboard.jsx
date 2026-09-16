@@ -4,7 +4,7 @@ const Dashboard = () => {
 
     return(
         <>
-            <main className="dashboard-container">
+            <main className="dashboard-container smooth-navigation">
                 
             </main>
         </>
