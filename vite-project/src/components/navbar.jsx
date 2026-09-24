@@ -15,7 +15,7 @@ const Navbar = () => {
 
     return (
         <>
-            <main>
+            <main className="smooth-navigation">
                 <h1 className="header">Make it Smart</h1>
 
                 <div className="navbar-container">

@@ -11,7 +11,7 @@ const DrivingLicence = () => {
 
     return (
         <>
-            <main className='container'>
+            <main className='container smooth-navigation'>
                 <div className='card-front-container'>
                     <div className='card-header-container'>
                         <div className='emblem-logo-container'>
