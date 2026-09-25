@@ -33,7 +33,7 @@ const NewDrivingLicence = () => {
                     <div className="front-container">
                         <div>
                             <h4>Driving Licence Number :</h4>
-                            <input type="text" placeholder="Enter Driving Licence Number" value={userData.licence_number} onChange={(e)=> userRegistration("licence_number", e.target.value)}/>
+                            <input type="text" placeholder="BR01 20262015488" value={userData.licence_number} onChange={(e)=> userRegistration("licence_number", e.target.value)}/>
                         </div>
                         <div>
                             <h4>Licence Issue Date :</h4>
@@ -71,7 +71,7 @@ const NewDrivingLicence = () => {
                     <div className="back-container">
                         <div>
                             <h4>Vehicle Code :</h4>
-                            <input type="text" placeholder="Enter vehicle code" value={userData.vehicle_code} onChange={(e)=> userRegistration("vehicle_code", e.target.value)}/>
+                            <input type="text" placeholder="MCWG LMV" value={userData.vehicle_code} onChange={(e)=> userRegistration("vehicle_code", e.target.value)}/>
                         </div>
                         <div>
                             <h4>Mobile Number :</h4>
@@ -79,7 +79,7 @@ const NewDrivingLicence = () => {
                         </div>
                         <div>
                             <h4>Licence Authority :</h4>
-                            <input type="text" placeholder="Enter licence authority name" value={userData.licence_authority} onChange={(e)=> userRegistration("licence_authority", e.target.value)}/>
+                            <input type="text" placeholder="Enter licence authority DTO name" value={userData.licence_authority} onChange={(e)=> userRegistration("licence_authority", e.target.value)}/>
                         </div>
                     </div>
                     <div className="submit-btn-container"><button onClick={SubmitUserdata}>Submit</button></div>
