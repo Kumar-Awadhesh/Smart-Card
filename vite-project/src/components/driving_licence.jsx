@@ -6,7 +6,7 @@ import { data } from "react-router-dom";
 const DrivingLicence = () => {
 
     const { licenceData, setLicenceData } = useContext(SmartCardContext)
-    console.log(licenceData)
+
 
 
     return (

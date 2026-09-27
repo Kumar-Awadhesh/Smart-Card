@@ -9,10 +9,38 @@ const VoterId = () => {
         <>
             <main className="voterid-container smooth-navigation">
                 <div className="voter-front-container smooth-navigation">
-
+                    <div className="voter-header-container">
+                        <div><img src="/images/emblem.png" alt="" /></div>
+                        <div>
+                            <h4>भारत निर्वाचन आयोग</h4>
+                            <h4>ELECTION COMMISSION OF INDIA</h4>
+                        </div>
+                        <div><img src="/images/voter-flag.png" alt="" /></div>
+                    </div>
+                    <div className="voter-body-container">
+                        <div className="user-data-container">
+                            <h4 className="epic-number">YHX1026487</h4>
+                            <div className="user-photo-details-container">
+                                <img src="" alt="" />
+                                <div className="user-personal-data-container">
+                                    <b>नाम: अभय कुमार </b><br />
+                                    <b>Name: Abhay Kumar</b><br />
+                                    <b>पिता का नाम: अभय कुमार </b><br />
+                                    <b>Father's Name: Abhay Kumar</b><br />
+                                    <b>लिंग / पुरुष /</b><br />
+                                    <b>जन्म तिथि / उम्र:</b><br />
+                                    <b>Date of Birth / Age:</b>
+                                </div>
+                                <img src="" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="voter-front-bottom-container">
+                        <p>e-Electors Photo Identity Card - मतदाता पहचान पत्र </p>
+                    </div>
                 </div>
                 <div className="voter-back-container">
-
+                    <h2>voter back</h2>
                 </div>
             </main>
         </>

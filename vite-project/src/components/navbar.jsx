@@ -13,6 +13,7 @@ const Navbar = () => {
     }
 
 
+
     return (
         <>
             <main className="smooth-navigation">
@@ -23,7 +24,7 @@ const Navbar = () => {
                     <div><h2 onClick={(e) => navigate("/driving-licence-form")}>Driving Licence</h2></div>
                     <div><h2>Registration Card</h2></div>
                     <div><h2>Pan Card</h2></div>
-                    <div><h2>Voter Id</h2></div>
+                    <div><h2 onClick={(e) => navigate("/voter_id")}>Voter Id</h2></div>
                     <div><h2>About</h2></div>
                 </div>
                 <h2 className="menu">

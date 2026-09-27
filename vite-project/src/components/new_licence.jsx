@@ -22,7 +22,7 @@ const NewDrivingLicence = () => {
 
     const SubmitUserdata = () => {
         setLicenceData(userData);
-        navigate("/driving-licence")
+        navigate("/driving_licence")
     }
 
 
