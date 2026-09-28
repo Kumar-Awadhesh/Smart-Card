@@ -36,7 +36,7 @@ const VoterId = () => {
                         </div>
                     </div>
                     <div className="voter-front-bottom-container">
-                        <p>e-Electors Photo Identity Card - मतदाता पहचान पत्र </p>
+                        <p>e-Electors Photo Identity Card - ई-मतदाता पहचान पत्र </p>
                     </div>
                 </div>
                 <div className="voter-back-container">

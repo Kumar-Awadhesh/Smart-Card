@@ -529,6 +529,10 @@
   text-align: center;
   border-radius: 5px;
   border: 1px solid;
+  background-image: url("/images/voter-front-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .voter-header-container {
@@ -540,7 +544,7 @@
 }
 
 .voter-front-container>div>div:first-child>img {
-  width: 25px;
+  width: 22px;
   height: 43px;
 }
 
@@ -571,8 +575,8 @@
 
 .epic-number{
   width: max-content;
+  font-size: small;
   padding-left: 10px;
-  margin-bottom: 5px;
 }
 
 .user-photo-details-container{
@@ -580,21 +584,22 @@
 }
 
 .user-photo-details-container>img:first-child{
-  width: 70px;
-  height: 95px;
+  width: 90px;
+  height: 115px;
   padding: 7px;
 }
 
 .user-photo-details-container>img:last-child{
-  width: 30px;
+  width: 35px;
+  position: absolute;
   height: 40px;
-  margin-left: 90px;
+  margin: -20px 0px 0px 295px;
 }
 
 .user-personal-data-container{
-  align-content: center;
   line-height: 1.5;
-  font-size: xx-small;
+  font-size: 11px;
+  margin-top: 5px;
   font-weight: bold;
 }
 
