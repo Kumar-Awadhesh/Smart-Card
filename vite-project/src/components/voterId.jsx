@@ -40,7 +40,32 @@ const VoterId = () => {
                     </div>
                 </div>
                 <div className="voter-back-container">
-                    <h2>voter back</h2>
+                    <div className="user-address-qr-container">
+                        <div className="sign-qr-epic-container">
+                            <img src="" alt="" />
+                            <img src="" alt="" />
+                            <h4></h4>
+                        </div>
+                        <div className="address-download-container">
+                            <div className="address-container">
+                                <p>
+                                    ffegrgjrgjefksjsfgnkkhh
+                                    ndkgsrhrkhhhrkhnrkrhhr
+                                </p>
+                                <p>
+                                    fjefjeojgoegjogjeogjeogj
+                                    kfkfkegegrkgkrrkhkkhsee
+                                </p>
+                            </div>
+                            <div className="electoral-date-container">
+                                <p>
+                                    kgrgegjgojhhheeeehehheh
+                                    gmrllhhldhmlmhelh
+                                </p>
+                                <p>Download Date-: 30-09-2026</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
         </>
