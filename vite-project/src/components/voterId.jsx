@@ -44,13 +44,13 @@ const VoterId = () => {
                         <div className="sign-qr-epic-container">
                             <img src="" alt="" />
                             <img src="" alt="" />
-                            <h4></h4>
+                            <h4>YHX1026487</h4>
                         </div>
                         <div className="address-download-container">
                             <div className="address-container">
                                 <p>
-                                    ffegrgjrgjefksjsfgnkkhh
-                                    ndkgsrhrkhhhrkhnrkrhhr
+                                    ओसव क्कफ्फ्जेफ्जेफ़ न्व्दक्क्व द्क्वक्ज
+                                    क्फफ्व्फ़ व्स्द्जेफ्जेफ़ व्न्दक्फ्ज न्फज्व्फ्व 
                                 </p>
                                 <p>
                                     fjefjeojgoegjogjeogjeogj
@@ -65,6 +65,16 @@ const VoterId = () => {
                                 <p>Download Date-: 30-09-2026</p>
                             </div>
                         </div>
+                    </div>
+                    <div className="voter-back-bottom-container">
+                        <p>
+                            <img src="" alt="" />
+                            <p>1950</p>
+                        </p>
+                        <p>
+                            <img src="" alt="" />
+                            <p>https://ceobihar.nic.in/</p>
+                        </p>
                     </div>
                 </div>
             </main>

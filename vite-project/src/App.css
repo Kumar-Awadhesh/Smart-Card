@@ -617,7 +617,63 @@
   box-sizing: border-box;
   margin-top: 50px;
   border-radius: 5px;
+  background-image: linear-gradient(rgba(255,255,255,0.2)),
+  url("/images/voter-back-background.jpg");
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
   border: 1px solid;
+}
+
+.user-address-qr-container{
+  width: 95%;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  gap: 50px;
+  margin: auto;
+  margin-top: 10px;
+  border: 1px solid;
+}
+
+.sign-qr-epic-container>img:first-child{
+  width: 35px;
+  margin-bottom: 10px;
+  border: 1px solid;
+}
+
+.sign-qr-epic-container>img:nth-child(2){
+  width: 70px;
+  height: 70px;
+  margin-bottom: 5px;
+  border: 1px solid;
+}
+
+.sign-qr-epic-container>h4{
+  font-size: small;
+}
+
+.address-download-container{
+  font-size: small;
+  font-weight: bold;
+}
+
+.address-download-container>div:first-child{
+  margin-bottom: 30px;
+}
+
+.address-container>p:first-child,
+.electoral-date-container>p:first-child
+{
+  margin-bottom: 5px;
+}
+
+.voter-back-bottom-container{
+  display: flex;
+  gap: 50px;
+  font-size: x-small;
+  font-weight: 500;
+  margin-left: 5px;
 }
 
 
