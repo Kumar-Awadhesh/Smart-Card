@@ -31,7 +31,10 @@ const VoterId = () => {
                                     <b>जन्म तिथि / उम्र:</b><br />
                                     <b>Date of Birth / Age:</b>
                                 </div>
-                                <img src="" alt="" />
+                                <p>
+                                    <img src="" alt="" />
+                                    <p>YHX1026487</p>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -68,11 +71,11 @@ const VoterId = () => {
                     </div>
                     <div className="voter-back-bottom-container">
                         <p>
-                            <img src="" alt="" />
+                            <img src="/images/phone-call.png" alt="" />
                             <p>1950</p>
                         </p>
                         <p>
-                            <img src="" alt="" />
+                            <img src="/images/globe.png" alt="" />
                             <p>https://ceobihar.nic.in/</p>
                         </p>
                     </div>
