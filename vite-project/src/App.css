@@ -531,7 +531,7 @@
   box-sizing: border-box;
   text-align: center;
   border-radius: 5px;
-  margin-top: 50px;
+  margin-top: 25px;
   background-image: url("/images/voter-front-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -631,6 +631,7 @@
   width: 350px;
   box-sizing: border-box;
   border-radius: 5px;
+  margin-top: 25px;
   background-image: linear-gradient(rgba(255,255,255,0.2)),
   url("/images/voter-back-background.jpg");
   background-position: center;
@@ -653,7 +654,7 @@
 .sign-qr-epic-container>img:first-child{
   width: 45px;
   height: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   border: 1px solid;
 }
 
@@ -665,7 +666,8 @@
 }
 
 .sign-qr-epic-container>h4{
-  font-size: small;
+  font-size: x-small;
+  text-align: center;
 }
 
 .address-download-container{
@@ -674,7 +676,7 @@
 }
 
 .address-download-container>div:first-child{
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .address-container>p:first-child,
@@ -684,9 +686,8 @@
 }
 
 .voter-back-bottom-container{
-  height: 20px;
   display: flex;
-  gap: 50px;
+  gap: 50px;;
   font-size: x-small;
   font-weight: 500;
   padding-left: 5px;
@@ -698,6 +699,7 @@
   display: flex;
   gap: 5px;
   align-self: center;
+  padding: 3px 0 3px 0;
 }
 
 .voter-back-bottom-container>p:first-child>img{

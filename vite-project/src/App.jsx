@@ -5,6 +5,7 @@ import DrivingLicence from './components/driving_licence'
 import Navbar from './components/navbar'
 import Dashboard from './components/dashboard'
 import VoterId from './components/voterId'
+import VoterIdForm from './components/voterId_form'
 import './App.css'
 
 
@@ -19,6 +20,7 @@ function App(){
         <Route path='/driving-licence-form' element={<NewDrivingLicence/>}/>
         <Route path='/driving_licence' element={<DrivingLicence/>}/>
         <Route path='/voter_id' element={<VoterId/>}/>
+        <Route path='/voter_id_form' element={<VoterIdForm/>} />
       </Routes>
     </>
   )
