@@ -379,6 +379,7 @@
   align-content: center;
 }
 
+
 .submit-btn-container>button {
   border: none;
   outline: none;
@@ -388,6 +389,10 @@
   font-size: medium;
   padding: 10px 20px 10px 20px;
   background-color: lightseagreen;
+}
+
+.submit-btn-container>button:focus{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .submit-btn-container {
@@ -527,7 +532,8 @@
 }
 
 .voter-front-container {
-  width: 350px;
+  min-width: 350px;
+  min-height: 205px;
   box-sizing: border-box;
   text-align: center;
   border-radius: 5px;
@@ -546,6 +552,8 @@
   padding: 10px 10px 5px 10px;
   text-align: center;
 }
+
+
 
 .voter-front-container>div>div:first-child>img {
   width: 22px;
@@ -628,7 +636,8 @@
 }
 
 .voter-back-container {
-  width: 350px;
+  min-width: 350px;
+  min-height: 205px;
   box-sizing: border-box;
   border-radius: 5px;
   margin-top: 25px;
@@ -732,6 +741,18 @@
   margin-bottom: 50px;
   padding: 5px;
   background-color: aqua;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* .voter-form-header>h1{
+  font-size: clamp(10px, 90%, 20px);
+} */
+
+.voter-front-form-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .voter-front-form-container>div {
@@ -751,17 +772,60 @@
   padding-left: 5px;
   border: none;
   outline: none;
+  border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.voter-front-form-container>div>div>input:focus{
+.voter-front-form-container>div>div>textarea {
+  width: 300px;
+  height: 80px;
+  padding-left: 5px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  align-content: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.voter-front-form-container>div>div>select{
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.voter-front-form-container>div>div>input:focus, 
+.voter-front-form-container>div>div>select:focus{
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
-/* .voter-front-form-container>div>div:nth-child(2)>input{
-  width: 170px;
-  border: 1px solid;
-} */
+.voter-submit-btn-container{
+  margin-top: 80px;
+  text-align: center;
+}
+
+.voter-submit-btn-container>button{
+  border: none;
+  outline: none;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: medium;
+  padding: 10px 20px 10px 20px;
+  background-color: lightseagreen;
+}
+
+.voter-submit-btn-container>button:focus{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.voter-submit-btn-container>button:hover {
+  cursor: pointer;
+  background-color: lightgreen;
+}
+
 
 
 

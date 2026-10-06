@@ -5,11 +5,12 @@ export const SmartCardContext = createContext();
 
 export const SmartCardProvider = ({children}) => {
     const [licenceData, setLicenceData] = useState([]);
+    const [voterData, setVoterData] = useState([]);
     
 
     return(
         <SmartCardContext.Provider value={{
-            licenceData, setLicenceData
+            licenceData, setLicenceData, voterData, setVoterData
         }}
         
         >{children}</SmartCardContext.Provider>

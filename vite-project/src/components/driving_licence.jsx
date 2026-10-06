@@ -1,6 +1,5 @@
 import { useState, useContext } from "react";
 import { SmartCardContext } from "../context/smartCardContext";
-import { data } from "react-router-dom";
 
 
 const DrivingLicence = () => {
