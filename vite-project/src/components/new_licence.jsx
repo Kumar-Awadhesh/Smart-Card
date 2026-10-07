@@ -45,7 +45,7 @@ const NewDrivingLicence = () => {
                         </div>
                         <div>
                             <h4>Holder's Photo :</h4>
-                            <input type="file" placeholder="Upload photo" accept="image/*" onChange={(e)=> userRegistration("holder_photo", e.target.files[0])} />
+                            <input type="file" placeholder="Upload photo" accept="/image/*" onChange={(e)=> userRegistration("holder_photo", e.target.files[0])} />
                         </div>
                         <div>
                             <h4>Holder's Signature :</h4>

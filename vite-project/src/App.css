@@ -391,7 +391,7 @@
   background-color: lightseagreen;
 }
 
-.submit-btn-container>button:focus{
+.submit-btn-container>button:focus {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
@@ -642,7 +642,7 @@
   border-radius: 5px;
   margin-top: 25px;
   background-image: linear-gradient(rgba(255, 255, 255, 0.2)),
-    url("/images/voter-back-background.jpg");
+  url("/images/voter-back-background.jpg");
   background-position: center;
   background-repeat: none;
   background-size: cover;
@@ -657,21 +657,21 @@
   gap: 30px;
   margin: auto;
   margin-top: 10px;
-  border: 1px solid;
+ 
 }
 
 .sign-qr-epic-container>img:first-child {
   width: 45px;
   height: 30px;
   margin-bottom: 15px;
-  border: 1px solid;
+
 }
 
 .sign-qr-epic-container>img:nth-child(2) {
   width: 75px;
   height: 75px;
   margin-bottom: 5px;
-  border: 1px solid;
+ 
 }
 
 .sign-qr-epic-container>h4 {
@@ -749,7 +749,7 @@
   font-size: clamp(10px, 90%, 20px);
 } */
 
-.voter-front-form-container{
+.voter-front-form-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -787,7 +787,7 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.voter-front-form-container>div>div>select{
+.voter-front-form-container>div>div>select {
   width: 100px;
   height: 30px;
   border: none;
@@ -796,17 +796,17 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.voter-front-form-container>div>div>input:focus, 
-.voter-front-form-container>div>div>select:focus{
+.voter-front-form-container>div>div>input:focus,
+.voter-front-form-container>div>div>select:focus {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
-.voter-submit-btn-container{
+.voter-submit-btn-container {
   margin-top: 80px;
   text-align: center;
 }
 
-.voter-submit-btn-container>button{
+.voter-submit-btn-container>button {
   border: none;
   outline: none;
   margin-bottom: 50px;
@@ -817,7 +817,7 @@
   background-color: lightseagreen;
 }
 
-.voter-submit-btn-container>button:focus{
+.voter-submit-btn-container>button:focus {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 

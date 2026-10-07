@@ -26,7 +26,7 @@ const VoterId = () => {
                         <div className="user-data-container">
                             <h4 className="epic-number">{voterData?.epic_number}</h4>
                             <div className="user-photo-details-container">
-                                <img src={voterData?.photo} alt="" />
+                                <img src={URL.createObjectURL(voterData.photo)} alt="" />
                                 <div className="user-personal-data-container">
                                     <b>नाम: {voterData?.name_hindi} </b><br />
                                     <b>Name: {voterData?.name_english}</b><br />
@@ -37,7 +37,7 @@ const VoterId = () => {
                                     <b>Date of Birth / Age: {voterData?.date_of_birth} </b>
                                 </div>
                                 <p>
-                                    <img src={voterData?.photo} alt="" />
+                                    <img src={voterData?.photo?.name} alt="" />
                                     <p>{voterData?.epic_number}</p>
                                 </p>
                             </div>
@@ -51,13 +51,13 @@ const VoterId = () => {
                     <div className="user-address-qr-container">
                         <div className="sign-qr-epic-container">
                             <img src={voterData?.blo_signature} alt="" />
-                            <img src={voterData?.qr_code} alt="" />
+                            <img src="" alt="" />
                             <h4>{voterData?.epic_number}</h4>
                         </div>
                         <div className="address-download-container">
                             <div className="address-container">
-                                <p>{voterData?.address_hindi}</p>
-                                <p>{voterData?.address_english}</p>
+                                <p>पता: {voterData?.address_hindi}</p>
+                                <p>Address: {voterData?.address_english}</p>
                             </div>
                             <div className="electoral-date-container">
                                 <p>{voterData?.part_name_hindi}</p>
