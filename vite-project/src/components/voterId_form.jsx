@@ -38,7 +38,7 @@ const VoterIdForm = () => {
                         </div>
                         <div>
                             <h3>Photo:</h3>
-                            <input type="file" placeholder="Upload photo" accept="/image/*" onChange={(e)=> userData("photo", e.target.files[0])} />
+                            <input type="file" placeholder="Upload photo" accept="image/*" onChange={(e)=> userData("photo", e.target.files[0])} />
                         </div>
                         <div>
                             <h3>नाम:</h3>
@@ -75,11 +75,11 @@ const VoterIdForm = () => {
                     <div>
                         <div>
                             <h3>BLO Signature:</h3>
-                            <input type="file" accept="/image/*" onChange={(e)=> userData("blo_signature", e.target.files[0])} />
+                            <input type="file" accept="image/*" onChange={(e)=> userData("blo_signature", e.target.files[0])} />
                         </div>
                         <div>
                             <h3>QR Code:</h3>
-                            <input type="file" accept="/image/*" onChange={(e)=> userData("qr_code", e.target.files[0])} />
+                            <input type="file" accept="image/*" onChange={(e)=> userData("qr_code", e.target.files[0])} />
                         </div>
                         <div>
                             <h3>पता:</h3>

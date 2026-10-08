@@ -535,6 +535,7 @@
   min-width: 350px;
   min-height: 205px;
   box-sizing: border-box;
+  margin: auto;
   text-align: center;
   border-radius: 5px;
   margin-top: 25px;
@@ -639,6 +640,7 @@
   min-width: 350px;
   min-height: 205px;
   box-sizing: border-box;
+  margin: auto;
   border-radius: 5px;
   margin-top: 25px;
   background-image: linear-gradient(rgba(255, 255, 255, 0.2)),
@@ -657,21 +659,19 @@
   gap: 30px;
   margin: auto;
   margin-top: 10px;
- 
 }
 
 .sign-qr-epic-container>img:first-child {
   width: 45px;
   height: 30px;
   margin-bottom: 15px;
-
 }
 
-.sign-qr-epic-container>img:nth-child(2) {
+.sign-qr-epic-container>img:nth-child(3) {
   width: 75px;
   height: 75px;
   margin-bottom: 5px;
- 
+
 }
 
 .sign-qr-epic-container>h4 {
@@ -802,6 +802,7 @@
 }
 
 .voter-submit-btn-container {
+  width: 100%;
   margin-top: 80px;
   text-align: center;
 }

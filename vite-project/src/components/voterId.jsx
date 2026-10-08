@@ -20,13 +20,17 @@ const VoterId = () => {
                             <h4>भारत निर्वाचन आयोग</h4>
                             <h4>ELECTION COMMISSION OF INDIA</h4>
                         </div>
-                        <div><img src="/images/voter-flag.png" alt="" /></div>
+                        <div><img src="images/voter-flag.png" alt="" /></div>
                     </div>
                     <div className="voter-body-container">
                         <div className="user-data-container">
                             <h4 className="epic-number">{voterData?.epic_number}</h4>
                             <div className="user-photo-details-container">
-                                <img src={URL.createObjectURL(voterData.photo)} alt="" />
+                                {
+                                    voterData?.photo && (
+                                        <img src={URL?.createObjectURL(voterData?.photo)} alt="" />
+                                    )
+                                }
                                 <div className="user-personal-data-container">
                                     <b>नाम: {voterData?.name_hindi} </b><br />
                                     <b>Name: {voterData?.name_english}</b><br />
@@ -37,8 +41,12 @@ const VoterId = () => {
                                     <b>Date of Birth / Age: {voterData?.date_of_birth} </b>
                                 </div>
                                 <p>
-                                    <img src={voterData?.photo?.name} alt="" />
-                                    <p>{voterData?.epic_number}</p>
+                                    {
+                                        voterData?.photo && (
+                                            <img src={URL?.createObjectURL(voterData?.photo)} alt="" />
+                                        )
+                                    }
+                                    <b>{voterData?.ebic_number}</b>
                                 </p>
                             </div>
                         </div>
@@ -50,8 +58,17 @@ const VoterId = () => {
                 <div className="voter-back-container">
                     <div className="user-address-qr-container">
                         <div className="sign-qr-epic-container">
-                            <img src={voterData?.blo_signature} alt="" />
-                            <img src="" alt="" />
+                            {
+                                voterData?.blo_signature &&  (
+                                    <img src={URL?.createObjectURL(voterData?.blo_signature)} alt="" />
+                                )
+                            }
+                            {
+                                voterData.qr_code && (
+                                    <img src={URL?.createObjectURL(voterData?.qr_code)} alt="" />
+                                
+                                )
+                            }
                             <h4>{voterData?.epic_number}</h4>
                         </div>
                         <div className="address-download-container">
@@ -68,15 +85,16 @@ const VoterId = () => {
                     </div>
                     <div className="voter-back-bottom-container">
                         <p>
-                            <img src="/images/phone-call.png" alt="" />
-                            <p>1950</p>
+                            <img src="images/phone-call.png" alt="" />
+                            <b>1950</b>
                         </p>
                         <p>
-                            <img src="/images/globe.png" alt="" />
-                            <p>https://ceobihar.nic.in/</p>
+                            <img src="images/globe.png" alt="" />
+                            <b>httbs://ceobihar.nic.in/</b>
                         </p>
                     </div>
                 </div>
+                <div className="voter-submit-btn-container"><button onClick={(()=>{window.print()})}>Submit</button></div>
             </main>
         </>
     )
