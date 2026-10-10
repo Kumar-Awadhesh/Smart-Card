@@ -1,5 +1,6 @@
 import { useState, useContext } from "react";
 import { SmartCardContext } from "../context/smartCardContext";
+import {QRCodeSVG} from "qrcode.react"
 
 
 const VoterId = () => {
@@ -46,7 +47,12 @@ const VoterId = () => {
                                             <img src={URL?.createObjectURL(voterData?.photo)} alt="" />
                                         )
                                     }
-                                    <b>{voterData?.ebic_number}</b>
+                                    {
+                                        voterData?.epic_number && (
+                                            <b className="small-epic-number">{voterData?.epic_number}</b>                    
+                                        )
+                                    }
+                                    
                                 </p>
                             </div>
                         </div>
@@ -64,8 +70,8 @@ const VoterId = () => {
                                 )
                             }
                             {
-                                voterData.qr_code && (
-                                    <img src={URL?.createObjectURL(voterData?.qr_code)} alt="" />
+                                voterData.name_english && (
+                                    <QRCodeSVG value={JSON.stringify(voterData)} size={75}/>
                                 
                                 )
                             }

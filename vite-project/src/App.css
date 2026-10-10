@@ -620,6 +620,15 @@
   height: 45px;
 }
 
+.small-epic-number{
+  width: 40px;
+  rotate: -270deg;
+  align-content: end;
+  text-align: right;
+  font-size: 5.5px;
+  margin-top: 7px;
+}
+
 .user-personal-data-container {
   line-height: 1.5;
   font-size: 11px;
@@ -637,7 +646,7 @@
 }
 
 .voter-back-container {
-  min-width: 350px;
+  width: 350px;
   min-height: 205px;
   box-sizing: border-box;
   margin: auto;
@@ -799,6 +808,14 @@
 .voter-front-form-container>div>div>input:focus,
 .voter-front-form-container>div>div>select:focus {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.electoral-date-container{
+  line-height: 0.8;
+}
+
+.electoral-date-container>p:last-child{
+  margin-top: 15px;
 }
 
 .voter-submit-btn-container {
