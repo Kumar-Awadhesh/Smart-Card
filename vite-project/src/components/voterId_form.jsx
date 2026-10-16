@@ -22,6 +22,14 @@ const VoterIdForm = () => {
 
     const generateVoterId = () => {
         setVoterData(userForm);
+        if(userForm.epic_number === "" || userForm.name_english === "" || userForm.name_hindi === "" ||
+            userForm.fathers_name_english === "" || userForm.fathers_name_hindi === "" ||
+            userForm.gender === "" || userForm.date_of_birth === "" || userForm.address_english === "" ||
+            userForm.address_hindi === "" || userForm.part_name_english === "" || userForm.part_name_hindi === "" ||
+            userForm.download_date === "" || userForm.photo === ""
+        ){
+            return alert("All fields are mandatory to fill!")
+        }
         navigate("/voter_id");
     }
 

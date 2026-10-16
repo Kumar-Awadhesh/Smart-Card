@@ -844,6 +844,10 @@
   background-color: lightgreen;
 }
 
+.mini-photo-container>img{
+  filter: grayscale(100%);
+}
+
 
 
 

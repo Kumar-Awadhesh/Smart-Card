@@ -9,6 +9,15 @@ const VoterId = () => {
 
     const {voterData, setVoterData} = useContext(SmartCardContext);
 
+   
+    const user = {
+        epic: voterData.epic_number,
+        name: voterData.name_english,
+        fathersName: voterData.fathers_name_english,
+        dateOfBirth: voterData.date_of_birth,
+        address: voterData.address_english
+    }
+   
 
 
     return(
@@ -41,7 +50,7 @@ const VoterId = () => {
                                     <b>जन्म तिथि / उम्र:  </b><br />
                                     <b>Date of Birth / Age: {voterData?.date_of_birth} </b>
                                 </div>
-                                <p>
+                                <p className="mini-photo-container">
                                     {
                                         voterData?.photo && (
                                             <img src={URL?.createObjectURL(voterData?.photo)} alt="" />
@@ -68,10 +77,10 @@ const VoterId = () => {
                                 voterData?.blo_signature &&  (
                                     <img src={URL?.createObjectURL(voterData?.blo_signature)} alt="" />
                                 )
-                            }
+                            } <br />
                             {
                                 voterData.name_english && (
-                                    <QRCodeSVG value={JSON.stringify(voterData)} size={75}/>
+                                    <QRCodeSVG value={JSON.stringify(user)} size={75} />
                                 
                                 )
                             }
