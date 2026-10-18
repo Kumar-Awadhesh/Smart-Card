@@ -6,6 +6,7 @@ import Navbar from './components/navbar'
 import Dashboard from './components/dashboard'
 import VoterId from './components/voterId'
 import VoterIdForm from './components/voterId_form'
+import PanForm from './components/pan_form'
 import './App.css'
 
 
@@ -21,6 +22,7 @@ function App(){
         <Route path='/driving_licence' element={<DrivingLicence/>}/>
         <Route path='/voter_id' element={<VoterId/>}/>
         <Route path='/voter_id_form' element={<VoterIdForm/>} />
+        <Route path='/pan_form' element={<PanForm/>} />
       </Routes>
     </>
   )

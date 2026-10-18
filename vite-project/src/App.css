@@ -851,6 +851,65 @@
 
 
 
+/* ------------------------------------------------------Pan Form Section--------------------------------------------- */
+
+
+
+
+.pan-form-container{
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border: 3px double lightseagreen;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.pan-form-container>div{
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-between;
+  line-height: 3;
+  align-items: center;
+}
+
+.pan-form-container>div>input{
+  width: 250px;
+  height: 40px;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.pan-form-container>div>input:focus{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.pan-header{
+  padding: 5px;
+  margin: auto;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: lightseagreen;
+}
+
+
+.btn-container>button{
+  text-align: center;
+  padding: 5px 10px 5px 10px;
+  font-size: medium;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+
+
+
 /* ----------------------------------------------------Media Query--------------------------------------------------- */
 
 

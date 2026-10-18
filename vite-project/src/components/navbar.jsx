@@ -23,7 +23,10 @@ const Navbar = () => {
                     <div><h2 onClick={(e) => navigate("/")}>Home</h2></div>
                     <div><h2 onClick={(e) => navigate("/driving-licence-form")}>Driving Licence</h2></div>
                     <div><h2>Registration Card</h2></div>
-                    <div><h2>Pan Card</h2></div>
+                    <div><h2 onClick={(e)=> {
+                                setNavbar(false);
+                                navigate("/pan_form")
+                            }}>Pan Card</h2></div>
                     <div><h2 onClick={(e) => {
                         setNavbar(false)
                         navigate("/voter_id_form");
@@ -47,7 +50,10 @@ const Navbar = () => {
                                 navigate("/driving-licence-form")
                             }}>Driving Licence</h4></div>
                             <div><h4>Registration Card</h4></div>
-                            <div><h4>Pan Card</h4></div>
+                            <div><h4 onClick={(e)=> {
+                                setNavbar(false);
+                                navigate("/pan_form")
+                            }}>Pan Card</h4></div>
                             <div><h4 onClick={(e)=> {
                                 setNavbar(false)
                                 navigate("/voter_id_form")
