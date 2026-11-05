@@ -897,16 +897,26 @@
   background-color: lightseagreen;
 }
 
+.btn-container{
+  height: 100px;
+}
 
 .btn-container>button{
-  text-align: center;
   padding: 5px 10px 5px 10px;
   font-size: medium;
   margin: auto;
-  margin-top: 50px;
-  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: aquamarine;
+  transition: 0.5s ease-in-out;
 }
 
+.btn-container>button:hover{
+  cursor: pointer;
+  padding: 10px 15px 10px 15px;
+  background-color: aqua;
+}
 
 
 
